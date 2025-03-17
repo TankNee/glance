@@ -41,6 +41,8 @@ func newWidget(widgetType string) (widget, error) {
 		w = &releasesWidget{}
 	case "videos":
 		w = &videosWidget{}
+	case "bilibili-videos":
+		w = &bilibiliVideosWidget{}
 	case "markets", "stocks":
 		w = &marketsWidget{}
 	case "reddit":
